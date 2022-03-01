@@ -1,0 +1,16 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+        "lib": ["ES2020"],
+        "outDir": "./dist",
+        "module": "commonjs",
+        "target": "ES2020",
+        "strict": true,
+        "strictNullChecks": false,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitAny": false
+    },
+    "include": ["./src"]
+}

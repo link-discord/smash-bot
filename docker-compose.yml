@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+    bot:
+        tty: true
+        restart: unless-stopped
+        build: .
+        env_file: .env
+
+    database:
+        image: 'postgres:latest'
+        volumes:
+            - ./postgres-data:/var/lib/postgresql/data
+        ports:
+            - 5432
+        environment:
+            POSTGRES_USER: urmom
+            POSTGRES_PASSWORD: mySuperStrongPassword
+            POSTGRES_DB: urmom
+
+networks:
+    default:
+        external:
+            name: smashbot_network

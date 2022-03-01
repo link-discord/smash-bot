@@ -1,0 +1,22 @@
+{
+  "name": "smash-bot",
+  "version": "1.0.0",
+  "description": "The first discord bot with 1000 commands lol",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "cd dist && node index.js",
+    "test": "npm run build && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/link-discord/smash-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/link-discord/smash-bot/issues"
+  },
+  "homepage": "https://github.com/link-discord/smash-bot#readme"
+}
